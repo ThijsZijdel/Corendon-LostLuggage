@@ -3,10 +3,12 @@
 Java Application for automating the proces of retrieving lost luggages for the airline company Corendon.
 
 
+![alt text](hero.jpg)
+
 ## Getting Started
 
 To see the application there are some things that needs to be configured before running it.
-So please follow to following document or read (/doc/manual.pdf)[/doc/manual.pdf]
+So please follow to following document or read /doc/manual.pdf
 
 Note: we didn't recieved a requiremnt from Corendon to make it an runable jar and add an config file.
 
@@ -70,7 +72,7 @@ For the entire instalation and configuring proces and a full manual of the appli
 * [Scenebuilder](http://gluonhq.com/products/scene-builder/) - For building the application scene's.
 * [Maven](https://maven.apache.org/) - Dependency Management
 
-###Dependencies/ Libraries 
+### Dependencies/ Libraries 
 * [JFoenix](http://www.jfoenix.com/) - For the material design in the application
 * [SQL Connector](http://www.jfoenix.com/) - For the connection to the database (MYJbdc)
 
@@ -83,6 +85,20 @@ For the entire instalation and configuring proces and a full manual of the appli
 * **Arthur Krom**
 * **Daron Ozdemir**
 
+
+## Project Files
+- app/LostLuggage			(folder for application)
+	- /paths/ 				(for info, send me a message)				
+
+- data 						(folder for db dummy data)
+	- CreateDB.sql 			(sql create dummy database query)
+
+
+- doc 						(folder for documentation)
+	- Manual.pdf 			(full manual, inc. instalation)
+  	- Poster.png  			(for giving an impression of the app)
+   	- Responsibilities.pdf 	(responsibilities for each author)
+		
 
 ## License
 
