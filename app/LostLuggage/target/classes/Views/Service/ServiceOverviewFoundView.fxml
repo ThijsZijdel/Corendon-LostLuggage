@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<!--  @author Thijs Zijdel - 500782165 -->
+
+<GridPane prefHeight="586.0" prefWidth="1179.0" style="-fx-background-color: fff;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Service.ServiceOverviewFoundViewController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="957.3544311523438" minWidth="350.0" prefWidth="472.0338439941406" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="957.3544311523438" minWidth="75.0" prefWidth="472.0338439941406" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="957.3544311523438" minWidth="150.0" prefWidth="246.5" />
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="777.9694519042969" minWidth="150.0" prefWidth="225.5" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints maxHeight="100.0" minHeight="60.0" prefHeight="75.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="15.5" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="148.65740966796875" minHeight="10.0" prefHeight="67.5" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="265.3981475830078" minHeight="10.0" prefHeight="161.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="316.0810241699219" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="33.31011962890625" minHeight="100.0" prefHeight="9.034820556640625" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+      <TableView fx:id="foundLuggageTable" onMouseClicked="#foundRowClicked" prefHeight="328.0" prefWidth="1178.0" GridPane.columnSpan="4" GridPane.rowIndex="2" GridPane.rowSpan="4">
+         <columns>
+            <TableColumn fx:id="foundRegistrationNr" maxWidth="2000.0" minWidth="40.0" prefWidth="40.0" text="%colFoundId" />
+            <TableColumn fx:id="foundDateFound" minWidth="80.0" prefWidth="100.0" text="%colFoundDate" />
+            <TableColumn fx:id="foundTimeFound" minWidth="75.0" prefWidth="90.0" text="%colFoundTime" />
+            <TableColumn fx:id="foundLuggageTag" minWidth="100.0" prefWidth="120.0" text="%colFoundTag" />
+            <TableColumn fx:id="foundLuggageType" minWidth="50.0" prefWidth="50.0" text="%colFoundType" />
+            <TableColumn fx:id="foundBrand" minWidth="100.0" prefWidth="125.0" text="%colFoundBrand" />
+            <TableColumn fx:id="foundMainColor" minWidth="100.0" prefWidth="125.0" text="%colFoundColor" />
+            <TableColumn fx:id="foundSecondColor" minWidth="100.0" prefWidth="125.0" text="%colFoundSecondColor" />
+            <TableColumn fx:id="foundSize" minWidth="125.0" prefWidth="150.0" text="%colFoundSize" />
+            <TableColumn fx:id="foundWeight" minWidth="50.0" prefWidth="65.0" text="%colFoundWeight" />
+            <TableColumn fx:id="foundOtherCharacteristics" minWidth="100.0" prefWidth="125.0" text="%colFoundChar" />
+            <TableColumn fx:id="foundPassengerId" minWidth="63.0" prefWidth="63.0" text="%colFoundPassId" />
+            <TableColumn fx:id="foundArrivedWithFlight" minWidth="50.0" prefWidth="84.0" text="%colFoundFlight" />
+            <TableColumn fx:id="foundLocationFound" minWidth="60.0" prefWidth="119.0" text="%colFoundLocation" />
+            <TableColumn fx:id="foundMatchedId" minWidth="60.0" prefWidth="119.0" text="%colFoundMatchId" />
+         </columns>
+      </TableView>
+      <FlowPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4189fc #4189fc;" GridPane.columnSpan="4" GridPane.rowSpan="2" />
+      <JFXButton buttonType="RAISED" onAction="#switchToMatching" prefHeight="27.0" prefWidth="115.0" ripplerFill="#0d47a1" style="-fx-background-color: red;" text="%serviceButtonFindMatch" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" onAction="#switchToInput" prefHeight="27.0" prefWidth="115.0" ripplerFill="#1b5e20" style="-fx-background-color: #4CAF50#4CAF50;" text="%serviceInputLuggage" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin>
+      </JFXButton>
+      <JFXComboBox fx:id="searchTypeComboBox" focusColor="WHITE" labelFloat="true" maxWidth="125.0" minWidth="100.0" onAction="#search" promptText="%searchFilterPrompt" unFocusColor="WHITE">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </JFXComboBox>
+      <JFXTextField fx:id="searchField" focusColor="WHITE" labelFloat="true" onAction="#search" onInputMethodTextChanged="#search" onKeyReleased="#search" prefHeight="27.0" prefWidth="260.0" promptText="%searchInputPrompt" unFocusColor="WHITE">
+         <GridPane.margin>
+            <Insets left="25.0" right="150.0" />
+         </GridPane.margin>
+      </JFXTextField>
+      <JFXToggleButton onAction="#showOnlyMatchedLuggage" text="%matchedLuggageToggle" toggleColor="#1b5e20" toggleLineColor="#4caf50" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+    </children>
+</GridPane>

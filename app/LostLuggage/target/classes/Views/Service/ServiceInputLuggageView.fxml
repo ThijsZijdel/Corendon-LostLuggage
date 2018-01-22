@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mainGridPane" alignment="CENTER" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Service.ServiceInputLuggageViewController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="450.0" minWidth="150.0" prefWidth="450.0" />
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="450.0" minWidth="150.0" prefWidth="450.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="155.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="450.0" minHeight="10.0" prefHeight="387.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <GridPane fx:id="travellerInfoGridPane" prefHeight="0.0" prefWidth="443.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+         <children>
+            <Label fx:id="passengerInformationLbl" text="Passenger information" underline="true" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="nameJFXTextField" labelFloat="true" promptText="Name" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="addressJFXTextField" labelFloat="true" promptText="Address" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="placeJFXTextField" labelFloat="true" promptText="Place of residence" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="postalcodeJFXTextField" labelFloat="true" promptText="Postalcode" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="countryJFXTextField" labelFloat="true" promptText="Country" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="phoneJFXTextField" labelFloat="true" promptText="Phone" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="emailJFXTextField" labelFloat="true" promptText="E-mail" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+         </children>
+        </GridPane>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXDatePicker fx:id="dateJFXDatePicker" promptText="Date" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXDatePicker>
+            <JFXTimePicker fx:id="timeJFXTimePicker" promptText="Time" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXTimePicker>
+            <JFXComboBox fx:id="missingFoundComboBox" onAction="#foundOrMissing" promptText="Form type" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="airportJFXComboBox" promptText="Airport" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+         </children>
+      </GridPane>
+      <GridPane fx:id="luggageInfoGridPane" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="luggageLabelLbl" text="Luggage Information" underline="true" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="labelnumberJFXTextField" labelFloat="true" promptText="Labelnumber" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="typeJFXComboBox" labelFloat="true" promptText="Type" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXTextField fx:id="brandJFXTextField" labelFloat="true" promptText="Brand" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="colorJFXComboBox" labelFloat="true" promptText="Color" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXTextField fx:id="characterJFXTextField" labelFloat="true" promptText="Characteristics" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="flightJFXComboBox" labelFloat="true" promptText="Flight" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="secondColorJFXComboBox" labelFloat="true" promptText="Second Color" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="locationJFXComboBox" labelFloat="true" promptText="Location" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXTextField fx:id="weightJFXTextField" labelFloat="true" promptText="Weight" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="sizeJFXTextField" labelFloat="true" promptText="Dimensions (LxBxH) in cm" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="destinationJFXComboBox" labelFloat="true" promptText="Destination" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <JFXButton fx:id="exportPDFBtn" buttonType="RAISED" disable="true" onAction="#exportPDF" prefHeight="63.0" prefWidth="130.0" style="-fx-background-color: #f1c40f;" text="Export PDF">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" disable="true" onAction="#emailPDF" prefHeight="63.0" prefWidth="130.0" style="-fx-background-color: #3498db;" text="E-mail PDF">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#submitForm" prefHeight="63.0" prefWidth="130.0" style="-fx-background-color: #2ecc71;" text="Save">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+    </children>
+</GridPane>

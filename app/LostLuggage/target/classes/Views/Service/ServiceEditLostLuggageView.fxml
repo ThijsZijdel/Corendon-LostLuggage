@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<!--  @author Thijs Zijdel - 500782165 -->
+
+<GridPane prefHeight="650.0" prefWidth="1179.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Service.ServiceEditLostLuggageViewController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="popupPain" prefHeight="675.0" prefWidth="400.0">
+         <children>
+            <GridPane layoutX="-24.0" layoutY="-22.0" prefHeight="640.0" prefWidth="415.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="124.0" prefWidth="175.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="26.0" prefWidth="26.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="125.0" prefWidth="175.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="28.0" />
+                  <ColumnConstraints />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="45.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="registrationNr" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldregNr" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="luggageTag" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldTag" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="brand" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldBrand" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="size" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldSize" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="weight" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldWeight" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.valignment="BOTTOM" />
+                  <JFXTextArea fx:id="signatures" editable="false" focusColor="#a7a7a7" labelFloat="true" prefHeight="115.0" prefWidth="282.0" promptText="%serviceFieldChar" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="9" GridPane.rowSpan="2" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" top="25.0" />
+                     </GridPane.margin>
+                  </JFXTextArea>
+                  <JFXTextField fx:id="passangerId" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassId" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="passangerName" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassName" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="address" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassAdd" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="place" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassPlace" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="postalCode" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassPostal" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="country" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassCountry" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="email" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassEmail" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="phone" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldPassPhone" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="8" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="dateLost" editable="false" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldDateLost" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="9" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="timeLost" editable="false" focusColor="#a7a7a7" labelFloat="true" promptText="%serviceFieldTimeLost" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="10" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="flight" focusColor="#a7a7a7" labelFloat="true" promptText="Flight" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="3" GridPane.rowIndex="11" GridPane.valignment="BOTTOM" />
+                  <GridPane prefHeight="27.0" prefWidth="446.0" GridPane.columnSpan="6" GridPane.rowIndex="12">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.9365234375" minWidth="10.0" prefWidth="361.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.220947265625" minWidth="10.0" prefWidth="369.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.220947265625" minWidth="10.0" prefWidth="605.9450378417969" />
+                        <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                     <children>
+                        <JFXButton fx:id="saveEditings" buttonType="RAISED" onAction="#saveEditings" prefHeight="15.0" prefWidth="136.0" ripplerFill="#62b565" style="-fx-background-color: #5fc965#5fc965;" text="%serviceSaveChanges" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <JFXButton fx:id="manualMatch" buttonType="RAISED" onAction="#manualMatch" prefHeight="32.0" prefWidth="256.0" ripplerFill="#dddddd" style="-fx-background-color: DDD;" text="%serviceButtonManualMatching" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <JFXButton fx:id="viewPotentialsButton" buttonType="RAISED" onAction="#viewPotentials" prefHeight="30.0" prefWidth="124.0" ripplerFill="#e8ab28" style="-fx-background-color: #fbc756#fbc756;" text="%serviceButtonViewPotentials" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                     </children>
+                  </GridPane>
+                  <JFXComboBox fx:id="colorPicker2" focusColor="#a7a7a7" labelFloat="true" maxWidth="364.0" minWidth="125.0" prefWidth="175.0" promptText="%serviceFieldSecondColor" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+                  <JFXComboBox fx:id="colorPicker1" focusColor="#a7a7a7" labelFloat="true" maxWidth="364.0" minWidth="125.0" prefWidth="175.0" promptText="%serviceFieldColor" style="-fx-prompt-text-fill: #b1b1b1 #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+                  <JFXComboBox fx:id="typePicker" focusColor="#a7a7a7" labelFloat="true" maxWidth="364.0" minWidth="125.0" prefWidth="175.0" promptText="%serviceFieldType" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#ababab" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+               </children>
+            </GridPane>
+            <StackPane fx:id="stackPane" onMouseClicked="#closeStackpane" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="579.0" prefWidth="949.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Manager.ManagerReportViewController">
+    <columnConstraints>
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="148.65740966796875" minHeight="10.0" prefHeight="81.10185241699219" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="265.3981475830078" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="316.0810241699219" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <LineChart fx:id="lineChart" prefHeight="414.0" prefWidth="721.0" style="-fx-background-color: #BFC9CA;" GridPane.columnSpan="5" GridPane.rowSpan="4">
+            <xAxis>
+                <CategoryAxis prefWidth="558.0" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#fifteen" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="2015" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="40.0" />
+         </GridPane.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#sevteen" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="2017" textFill="WHITE">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="38.0" prefWidth="566.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+            <JFXButton fx:id="six" buttonType="RAISED" onAction="#sixteen" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="2016" textFill="WHITE">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#eighteen" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="2018" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+    </children>
+</GridPane>

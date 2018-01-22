@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--  @author Thijs Zijdel - 500782165 -->
+
+<GridPane prefHeight="586.0" prefWidth="1179.0" style="-fx-background-color: fff;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Service.ServiceMatchingViewController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="957.3544311523438" minWidth="10.0" prefWidth="277.5" />
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="842.5" minWidth="10.0" prefWidth="842.5" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints maxHeight="148.65740966796875" minHeight="10.0" prefHeight="27.5" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="148.65740966796875" minHeight="10.0" prefHeight="57.5" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="266.5" minHeight="10.0" prefHeight="266.5" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="316.0810241699219" minHeight="20.0" prefHeight="25.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="40.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="40.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="135.5" minHeight="20.0" prefHeight="25.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="49.089630126953125" minHeight="40.0" prefHeight="47.791107177734375" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="40.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="94.903076171875" minHeight="27.5" prefHeight="27.5" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+      <TabPane fx:id="matchingTabs" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" GridPane.columnSpan="2" GridPane.rowSpan="3">
+        <tabs>
+          <Tab fx:id="possibleTab" text="%serviceMatchingTabAuto">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="matchTabbleView" onMouseClicked="#matchRowClicked" prefHeight="207.0" prefWidth="1178.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="matchIdLost" maxWidth="2000.0" minWidth="50.0" prefWidth="55.0" text="%serviceMatchingIdLost" />
+                              <TableColumn fx:id="matchIdFound" minWidth="65.0" prefWidth="65.0" text="%serviceMatchingIdFound" />
+                              <TableColumn fx:id="matchTag" minWidth="180.0" prefWidth="200.0" text="Tag" />
+                              <TableColumn fx:id="matchPercentage" minWidth="60.0" prefWidth="70.0" text="Match %" />
+                              <TableColumn fx:id="matchType" minWidth="60.0" prefWidth="75.0" text="%colFoundType" />
+                              <TableColumn fx:id="matchBrand" minWidth="150.0" prefWidth="175.0" text="%colFoundBrand" />
+                              <TableColumn fx:id="matchMainColor" minWidth="150.0" prefWidth="200.0" text="%serviceMatchingPrimaryColor" />
+                              <TableColumn fx:id="matchSecondColor" minWidth="150.0" prefWidth="200.0" text="%serviceMatchingSecondaryColor" />
+                              <TableColumn fx:id="matchSize" minWidth="190.0" prefWidth="200.0" text="%serviceMatchingSize" />
+                              <TableColumn fx:id="matchWeight" minWidth="70.0" prefWidth="100.0" text="%colFoundWeight" />
+                              <TableColumn fx:id="matchId" minWidth="60.0" prefWidth="65.0" text="Match ID" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="manualTab" text="%serviceMatchingTabManual">
+            <content>
+              <AnchorPane fx:id="manualPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="manuelGrid" layoutX="12.0" layoutY="8.0" prefHeight="112.0" prefWidth="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" prefWidth="589.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" prefWidth="590.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="167.0" minHeight="24.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="242.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="97.0" minHeight="40.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane prefWidth="1179.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="24.0" minHeight="45.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <JFXButton buttonType="RAISED" onAction="#confirmMatch" prefHeight="35.0" prefWidth="121.0" ripplerFill="#318d49" style="-fx-background-color: #46d06b#46d06b;" text="%serviceConfirm" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <JFXButton onAction="#removeManualLost" ripplerFill="#9e2626" style="-fx-background-color: #e03434#e03434;" text="%serviceRemove" textFill="WHITE">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </JFXButton>
+                                    <JFXButton onAction="#removeManualFound" ripplerFill="#518cf2" style="-fx-background-color: #e03434#e03434;" text="%serviceRemove" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                       <GridPane.margin>
+                                          <Insets right="15.0" />
+                                       </GridPane.margin>
+                                    </JFXButton>
+                                 </children>
+                              </GridPane>
+                              <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #62b565#62b565 #62b565#62b565;">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="%serviceLost">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </FlowPane>
+                              <Pane fx:id="foundPane" minHeight="200.0" minWidth="450.0" prefHeight="300.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                              <Pane fx:id="lostPane" minHeight="200.0" minWidth="450.0" prefHeight="300.0" prefWidth="589.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <children>
+                                    <JFXTextArea editable="false" layoutX="66.0" layoutY="21.0" minWidth="300.0" prefHeight="198.0" prefWidth="435.0" style="-fx-text-fill: #999;" text="The manual matching makes the process of checking the last values of a possible match a lot easier! You will be able to see and compare two luggages. 1 Lost and 1 Found in just 2 steps.&#10;&#10;STEP 1&#10;Double click on one of the table row's below.&#10;&#10;STEP 2&#10;On the full details popup click:&#10;At the right bottom: *manual matching*&#10;" />
+                                 </children></Pane>
+                              <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4189fc;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="%serviceFound">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </GridPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="potentialTab" text="%serviceMatchingTabPoten">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="potentialMatchingTable" onMouseClicked="#matchRowClicked" prefHeight="207.0" prefWidth="1178.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="potentialIdLost" maxWidth="2000.0" minWidth="40.0" prefWidth="50.0" text="ID Lost" />
+                              <TableColumn fx:id="potentialIdFound" minWidth="65.0" prefWidth="65.0" text="ID Found" />
+                              <TableColumn fx:id="potentialTag" minWidth="100.0" prefWidth="200.0" text="Tag" />
+                              <TableColumn fx:id="potentialPercentage" minWidth="60.0" prefWidth="75.0" text="Match %" />
+                              <TableColumn fx:id="potentialType" minWidth="100.0" prefWidth="120.0" text="Type" />
+                              <TableColumn fx:id="potentialBrand" minWidth="150.0" prefWidth="200.0" text="Brand" />
+                              <TableColumn fx:id="potentialMainColor" minWidth="175.0" prefWidth="225.0" text="Primary Color" />
+                              <TableColumn fx:id="potentialSecondColor" minWidth="175.0" prefWidth="225.0" text="Secondary Color" />
+                              <TableColumn fx:id="potentialSize" minWidth="200.0" prefWidth="200.0" text="Size (LxBxH)" />
+                              <TableColumn fx:id="potentialWeight" minWidth="70.0" prefWidth="100.0" text="Weight (Kg)" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <TableView fx:id="lostLuggageTable" onMouseClicked="#lostRowClicked" prefHeight="328.0" prefWidth="1178.0" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="2">
+         <columns>
+            <TableColumn fx:id="lostRegistrationNr" maxWidth="2000.0" minWidth="40.0" prefWidth="50.0" text="%colLostId" />
+            <TableColumn fx:id="DateLost" minWidth="80.0" prefWidth="90.0" text="%colLostDate" />
+            <TableColumn fx:id="TimeLost" minWidth="65.0" prefWidth="85.0" text="%colLostTime" />
+            <TableColumn fx:id="lostLuggageTag" minWidth="110.0" prefWidth="115.0" text="%colLostTag" />
+            <TableColumn fx:id="lostLuggageType" minWidth="50.0" prefWidth="60.0" text="%colLostType" />
+            <TableColumn fx:id="lostBrand" minWidth="100.0" prefWidth="125.0" text="%colLostBrand" />
+            <TableColumn fx:id="lostMainColor" minWidth="100.0" prefWidth="110.0" text="%colLostColor" />
+            <TableColumn fx:id="lostSecondColor" minWidth="110.0" prefWidth="110.0" text="%colLostSecondColor" />
+            <TableColumn fx:id="lostSize" minWidth="150.0" prefWidth="160.0" text="%colLostSize" />
+            <TableColumn fx:id="lostWeight" minWidth="50.0" prefWidth="75.0" text="%colLostWeight" />
+            <TableColumn fx:id="lostPassengerId" minWidth="50.0" prefWidth="75.0" text="%colLostPassId" />
+            <TableColumn fx:id="lostFlight" minWidth="90.0" prefWidth="125.0" text="%colLostFlight" />
+         </columns>
+      </TableView>
+      <TableView fx:id="foundLuggageTable" onMouseClicked="#foundRowClicked" prefHeight="328.0" prefWidth="1178.0" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.rowSpan="2">
+         <columns>
+            <TableColumn fx:id="foundRegistrationNr" maxWidth="2000.0" minWidth="40.0" prefWidth="50.0" text="%colFoundId" />
+            <TableColumn fx:id="foundDateFound" minWidth="80.0" prefWidth="90.0" text="%colFoundDate" />
+            <TableColumn fx:id="foundTimeFound" minWidth="85.0" prefWidth="85.0" text="%colFoundTime" />
+            <TableColumn fx:id="foundLuggageTag" minWidth="110.0" prefWidth="115.0" text="%colFoundTag" />
+            <TableColumn fx:id="foundLuggageType" minWidth="50.0" prefWidth="60.0" text="%colFoundType" />
+            <TableColumn fx:id="foundBrand" minWidth="100.0" prefWidth="125.0" text="%colFoundBrand" />
+            <TableColumn fx:id="foundMainColor" minWidth="100.0" prefWidth="110.0" text="%colFoundColor" />
+            <TableColumn fx:id="foundSecondColor" minWidth="110.0" prefWidth="110.0" text="%colFoundSecondColor" />
+            <TableColumn fx:id="foundSize" minWidth="150.0" prefWidth="160.0" text="%colFoundSize" />
+            <TableColumn fx:id="foundWeight" minWidth="50.0" prefWidth="76.0" text="%colFoundWeight" />
+            <TableColumn fx:id="foundPassengerId" minWidth="50.0" prefWidth="75.0" text="%colFoundPassId" />
+            <TableColumn fx:id="foundArrivedWithFlight" minWidth="75.0" text="%colFoundFlight" />
+            <TableColumn fx:id="foundLocationFound" minWidth="100.0" prefWidth="125.0" text="%colFoundLocation" />
+         </columns>
+      </TableView>
+      <FlowPane prefHeight="22.0" prefWidth="337.0" style="-fx-background-color: #4189fc;" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="%serviceFoundLuggage">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="10.0" />
+               </FlowPane.margin>
+            </Text>
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #62b565#62b565 #62b565#62b565 #62b565#62b565 #62b565;" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="%serviceLostLuggage">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="10.0" />
+               </FlowPane.margin>
+            </Text>
+         </children>
+      </FlowPane>
+      <JFXButton buttonType="RAISED" minWidth="110.0" onAction="#switchToLostOverview" prefHeight="14.0" prefWidth="110.0" ripplerFill="#62b565" style="-fx-background-color: #4c904d#4c904d;" text="%serviceButtonSeeFullOverview" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" minWidth="110.0" onAction="#switchToFoundOverview" prefHeight="14.0" prefWidth="110.0" ripplerFill="#4189fc" style="-fx-background-color: #2e66b5#2e66b5;" text="%serviceButtonSeeFullOverview" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+    </children>
+</GridPane>

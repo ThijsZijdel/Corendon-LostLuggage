@@ -1,0 +1,55 @@
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: grey;
+}
+.back {
+   -fx-background-color:  #fa5252; 
+   -fx-content: "back";
+}
+
+
+table-view, .tree-table-view {
+	/* Constants used throughout the tableview. */
+	-fx-table-header-border-color: transparent;
+	-fx-table-cell-border-color: -fx-box-border; /* Horizontal Lines*/
+	-fx-background-color: transparent;
+}
+
+.table-view .filler, .tree-table-view .filler, .table-view .column-header,
+	.tree-table-view .column-header {
+	-fx-size: 35;
+	-fx-border-style: null;
+	-fx-border-color: rgb(200.0, 200.0, 200.0);
+	-fx-border-width: 0 0 2 0;
+	-fx-background-color: transparent;
+}
+
+.table-view .show-hide-columns-button, .tree-table-view .show-hide-columns-button
+	{
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header .label, .table-view .filler .label,
+	.table-view .column-drag-header .label, .tree-table-view .column-header .label,
+	.tree-table-view .filler .label, .tree-table-view .column-drag-header .label
+	{
+	-fx-alignment: CENTER_LEFT;
+}
+
+.table-view .column-header-background, .tree-table-view .column-header-background
+	{
+	-fx-background-color: rgb(230.0, 230.0, 230.0);
+        -fx-text-fill:#fff;
+        
+}
+
+.table-row-cell, .tree-table-row-cell {
+	-fx-cell-size: 25px;
+}
+
+.table-cell {
+	-fx-border-color: rgb(245.0, 245.0, 245.0); /* Vertical Lines*/
+	-fx-border-width: 1;
+}
+
+

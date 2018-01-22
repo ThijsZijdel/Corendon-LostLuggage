@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.MainViewController">
+   <left>
+      <Pane prefHeight="624.0" prefWidth="123.0" style="-fx-background-color: #ced4da#ced4da;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="backButton" layoutX="19.0" layoutY="31.0" onAction="#goBackToPreviousScene" prefHeight="38.0" prefWidth="85.0" ripplerFill="WHITE" style="-fx-background-color: #495057#495057;" text="&lt; Back" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="144.0" prefWidth="1200.0" style="-fx-background-color: #ced4da#ced4da;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logoView" fitHeight="120.0" fitWidth="344.0" layoutX="90.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" />
+            <HBox fx:id="topHBox" alignment="CENTER" layoutX="247.0" prefHeight="144.0" prefWidth="832.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="title" alignment="CENTER" prefHeight="144.0" prefWidth="685.0" text="Choose Role">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="englishButton" buttonType="RAISED" prefHeight="27.0" prefWidth="41.0" ripplerFill="WHITE" style="-fx-background-color: #018ada#018ada;" text="EN" textFill="WHITE" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="20.0" />
+            <JFXButton fx:id="dutchButton" buttonType="RAISED" layoutX="2.0" layoutY="1.0" prefHeight="27.0" prefWidth="43.0" ripplerFill="WHITE" style="-fx-background-color: ff5151;" text="NL" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0" />
+            <JFXButton fx:id="settingsButton" layoutX="1091.0" layoutY="21.0" onAction="#showSettingsView" prefHeight="27.0" prefWidth="96.0" ripplerFill="WHITE" style="-fx-background-color: #495057#495057;" text="Settings" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="58.0" />
+            <JFXButton fx:id="logoutButton" layoutX="1064.0" layoutY="59.0" onAction="#logout" prefHeight="27.0" prefWidth="96.0" ripplerFill="WHITE" style="-fx-background-color: #495057#495057;" text="Logout" textFill="WHITE" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="95.0" />
+         </children></AnchorPane>
+   </top>
+   <right>
+      <Pane prefHeight="624.0" prefWidth="79.0" style="-fx-background-color: #ced4da#ced4da;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="32.0" prefWidth="1200.0" style="-fx-background-color: #ced4da#ced4da;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane fx:id="centerPane" prefHeight="624.0" prefWidth="1003.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

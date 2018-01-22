@@ -1,0 +1,24 @@
+-classpath
+'/Users/thijszijdel/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/thijszijdel/.m2/repository/com/jfoenix/jfoenix/1.10.0/jfoenix-1.10.0.jar:/Users/thijszijdel/.m2/repository/mysql/mysql-connector-java/5.1.42/mysql-connector-java-5.1.42.jar:/Users/thijszijdel/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar:/Users/thijszijdel/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/Users/thijszijdel/Documents/HvA/Leerjaar 1/Projecten/FYS/CorendonLostLuggage/LostLuggage/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2018 Your Organisation. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/thijszijdel/Documents/HvA/Leerjaar 1/Projecten/FYS/CorendonLostLuggage/LostLuggage/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'LostLuggage 1.0 API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/Users/thijszijdel/Documents/HvA/Leerjaar 1/Projecten/FYS/CorendonLostLuggage/LostLuggage/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'LostLuggage 1.0 API'

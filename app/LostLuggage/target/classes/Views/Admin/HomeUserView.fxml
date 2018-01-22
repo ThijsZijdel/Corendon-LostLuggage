@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="579.0" prefWidth="949.0" style="-fx-background-color: fffff;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Admin.HomeUserViewController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="148.65740966796875" minHeight="10.0" prefHeight="81.10185241699219" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="265.3981475830078" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="316.0810241699219" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <JFXButton fx:id="button" buttonType="RAISED" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="65.0" prefWidth="245.0" ripplerFill="WHITE" style="-fx-background-color: #F44336#F44336;" styleClass=".button" text="%adminOverview" textFill="WHITE" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="40.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="20.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#viewAddUserWindow" prefHeight="65.0" prefWidth="245.0" ripplerFill="WHITE" style="-fx-background-color: #2196F3#2196F3;" styleClass=".button" text="%adminAddUser" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="40.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="20.0" />
+            </font>
+        </JFXButton>
+      <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#viewAddExtraDataWindow" prefHeight="65.0" prefWidth="245.0" ripplerFill="WHITE" style="-fx-background-color: #2196F3#2196F3;" styleClass=".button" text="%adminAddExtra" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="40.0" />
+         </GridPane.margin>
+      </JFXButton>
+    </children>
+</GridPane>

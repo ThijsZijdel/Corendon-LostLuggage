@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<!--  @author Thijs Zijdel - 500782165 -->
+
+<AnchorPane id="AnchorPane" minHeight="150.0" minWidth="400.0" prefHeight="250.0" prefWidth="603.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Service.ServiceManualMatchingFoundController">
+    <children>
+      <ScrollPane minWidth="603.0" prefHeight="339.0" prefWidth="603.0" style="-fx-background-color: fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <GridPane alignment="TOP_CENTER" minWidth="400.0" prefHeight="622.0" prefWidth="570.0" style="-fx-background-color: fff;">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="25.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="125.0" prefWidth="205.72174072265625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="25.0" prefWidth="51.53375244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="125.0" prefWidth="227.46624755859375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="25.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="registrationNr" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Registration Nr" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="type" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Type" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="brand" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Brand" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="mainColor" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Color" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                  <JFXTextArea fx:id="signatures" editable="false" focusColor="#282727" prefHeight="115.0" prefWidth="282.0" promptText="Signatures" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.rowSpan="2" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" top="5.0" />
+                     </GridPane.margin>
+                  </JFXTextArea>
+                  <JFXTextField fx:id="secondColor" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Color" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="luggageTag" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Luggage Tag" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="size" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Size" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="weight" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Weight" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="passangerId" focusColor="#b1b1b1" labelFloat="true" prefWidth="174.0" promptText="Passenger ID" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="passangerName" focusColor="#b1b1b1" labelFloat="true" promptText="Passenger Name" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="address" focusColor="#b1b1b1" labelFloat="true" promptText="Address" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="place" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Place" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="postalCode" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Postal Code" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="country" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Country" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="email" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Email" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="phone" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Phone" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="locationFound" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Location Found" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="8" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="flight" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Flight" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="11" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="dateFound" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Date Found" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="9" GridPane.valignment="BOTTOM" />
+                  <JFXTextField fx:id="timeFound" editable="false" focusColor="#b1b1b1" labelFloat="true" promptText="Time Found" style="-fx-prompt-text-fill: #b1b1b1;" unFocusColor="#d7d7d7" GridPane.columnIndex="3" GridPane.rowIndex="10" GridPane.valignment="BOTTOM" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

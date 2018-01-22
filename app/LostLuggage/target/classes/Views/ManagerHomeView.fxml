@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="579.0" prefWidth="949.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Manager.ManagerHomeViewController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="148.65740966796875" minHeight="10.0" prefHeight="81.10185241699219" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="265.3981475830078" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="316.0810241699219" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+      <JFXButton buttonType="RAISED" onAction="#toLostView" prefHeight="70.0" prefWidth="222.0" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="Overview Lost Luggage" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="40.0" />
+         </GridPane.margin>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" onAction="#toFoundView" prefHeight="70.0" prefWidth="222.0" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="Overview Found Luggage" textFill="WHITE" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="40.0" />
+         </GridPane.margin>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" onAction="#toRetrievedView" prefHeight="70.0" prefWidth="222.0" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="Retrieved Luggage" textFill="WHITE" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="40.0" />
+         </GridPane.margin>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" onAction="#reportView" prefHeight="70.0" prefWidth="222.0" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="Reports" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="40.0" />
+         </GridPane.margin>
+      </JFXButton>
+    </children>
+</GridPane>

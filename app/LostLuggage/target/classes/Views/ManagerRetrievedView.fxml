@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="579.0" prefWidth="949.0" style="-fx-background-color: fff;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is103.lostluggage.Controllers.Manager.ManagerRetrievedViewController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="3.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="3.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints maxHeight="148.65740966796875" minHeight="3.0" prefHeight="81.10185241699219" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="265.3981475830078" minHeight="3.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="316.0810241699219" minHeight="3.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="3.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+      <FlowPane prefHeight="69.0" prefWidth="949.0" style="-fx-background-color: #4d4d4d;" GridPane.columnSpan="2">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="354.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="299.0" text="Delivered bagage" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="79.0" top="3.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="392.0" />
+            <HBox prefHeight="100.0" prefWidth="392.0">
+               <children>
+                  <JFXButton fx:id="updateform1" buttonType="RAISED" onAction="#refreshTable" prefHeight="26.0" prefWidth="123.0" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="Refresh table" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="50.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children></HBox>
+            <HBox prefHeight="100.0" prefWidth="314.0">
+               <children>
+                  <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="299.0" text="Treated bagage" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+            </HBox>
+         </children>
+      </FlowPane>
+      <GridPane prefHeight="406.0" prefWidth="586.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="-Infinity" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="14.0" minWidth="3.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="256.0" minWidth="160.0" prefWidth="256.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="154.4000244140625" minWidth="64.0" prefWidth="64.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="formtextid" focusColor="#4dadf7" labelFloat="true" promptText="%managerFormId" GridPane.columnSpan="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXButton fx:id="exportform" buttonType="RAISED" onAction="#exportPdf" prefHeight="26.0" prefWidth="249.0" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="%exportPdf" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="19">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXTextField fx:id="customerid" focusColor="#4dadf7" labelFloat="true" prefHeight="25.0" prefWidth="199.0" promptText="Customer name" GridPane.columnSpan="3" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="50.0" top="3.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="deivererid" focusColor="#4dadf7" labelFloat="true" promptText="Deliverer" GridPane.columnSpan="3" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="50.0" top="3.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="emailid" focusColor="#4dadf7" labelFloat="true" promptText="Email" GridPane.columnSpan="3" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="50.0" top="3.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="adresid" focusColor="#4dadf7" labelFloat="true" promptText="Deliver address" GridPane.columnSpan="3" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets left="50.0" top="3.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="dateid" focusColor="#4dadf7" labelFloat="true" layoutX="135.0" layoutY="120.0" promptText="Retrieved date" GridPane.columnSpan="3" GridPane.rowIndex="13">
+               <GridPane.margin>
+                  <Insets left="50.0" top="3.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="employeeservice" focusColor="#4dadf7" labelFloat="true" promptText="Employee name" GridPane.columnSpan="3" GridPane.rowIndex="15">
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXButton fx:id="updateform" buttonType="RAISED" onAction="#updateFormInfo" prefHeight="26.0" prefWidth="249.0" ripplerFill="#ab2020" style="-fx-background-color: #dd3c3c#dd3c3c #dd3c3c#dd3c3c;" text="Update information" textFill="WHITE" GridPane.rowIndex="19">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXTextField fx:id="lostluggageid" focusColor="#4dadf7" labelFloat="true" promptText="Lost luggage ID" GridPane.columnSpan="3" GridPane.rowIndex="17">
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </JFXTextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets top="70.0" />
+         </GridPane.margin>
+      </GridPane>
+        <TableView fx:id="retrievedTable" prefHeight="414.0" prefWidth="721.0" GridPane.rowIndex="1" GridPane.rowSpan="4">
+            <columns>
+                <TableColumn fx:id="FormID" prefWidth="115.17697143554688" text="RegistrationID" />
+            <TableColumn fx:id="koffernr" prefWidth="140.80004119873047" text="LuggageID" />
+                <TableColumn fx:id="Date" prefWidth="140.80004119873047" text="Date" />
+                <TableColumn fx:id="Customer" prefWidth="110.39996337890625" text="Customer" />
+                <TableColumn fx:id="Employee" prefWidth="106.4000244140625" text="Employee" />
+                <TableColumn fx:id="Deliverer" prefWidth="127.19998168945312" text="Bezorger" />
+            </columns>
+        </TableView>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" />
+    </children>
+</GridPane>
