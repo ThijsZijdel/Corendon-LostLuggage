@@ -48,7 +48,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
 
         //Method to set the db property
-        setDatabase("corendonlostluggage", "root", "root");
+        setDatabase("corendonlostluggage", "root", "admin");
                 
         //set root
         root = FXMLLoader.load(getClass().getResource("/fxml/MainView.fxml"));
