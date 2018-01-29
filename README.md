@@ -1,6 +1,6 @@
 # Corendon-LostLuggage
 
-Java Application for automating the proces of retrieving lost luggages for the airline company Corendon.
+Java Application for automating the process of retrieving lost luggage for the airline company Corendon.
 
 
 ![alt text](hero.jpg)
@@ -10,12 +10,12 @@ Java Application for automating the proces of retrieving lost luggages for the a
 To see the application there are some things that needs to be configured before running it.
 So please follow to following document or read /doc/manual.pdf
 
-Note: we didn't recieved a requiremnt from Corendon to make it an runable jar and add an config file.
+Note: we didn't received a requirement from Corendon to make it a runable jar and add a config file.
 
 
 ### Prerequisites
 
-Install an Java IDE to build and run the application
+Install a Java IDE to build and run the application
 
 ```
 We used Netbeans to build it. See [Built with] for the link
@@ -61,7 +61,7 @@ For getting the user passwords see: /doc/manual.pdf
 ### More information
 
 See: /doc/manual.pdf 
-For the entire instalation and configuring proces and a full manual of the application.
+For the entire installation and configuring process and a full manual of the application.
 
 
 ## Built With
@@ -95,7 +95,7 @@ For the entire instalation and configuring proces and a full manual of the appli
 
 
 - doc 						(folder for documentation)
-	- Manual.pdf 			(full manual, inc. instalation)
+	- Manual.pdf 			(full manual, inc. installation)
   	- Poster.png  			(for giving an impression of the app)
    	- Responsibilities.pdf 	(responsibilities for each author)
 		
